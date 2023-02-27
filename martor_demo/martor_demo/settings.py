@@ -29,7 +29,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = ['*']
-
+ALLOWD_HOSTS =  ['192.168.1.197']
 # Martor Configuration
 MARTOR_THEME = 'bootstrap'  # semantic
 MARTOR_ENABLE_LABEL = True
@@ -143,5 +143,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATIC_ROOT = os.path.join(tempfile.gettempdir(), 'martor_static')
-MEDIA_ROOT = os.path.join(tempfile.gettempdir(), 'martor_media')
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
